@@ -10,14 +10,12 @@ export const AgeRange = () => {
         '76+': 'btn-primary'
     }
     
-
     const [buttonDisplay, changeButtonDisplay] = useState(state);
 
     const onButtonClick = e => {
         let button = e.target.name;
         console.log(button);
-        changeButtonDisplay(buttonDisplay[button] === 'btn-primary' ? 'btn-default' : 'btn-primary');
-        console.log(buttonDisplay);
+        changeButtonDisplay({...buttonDisplay, [button]: buttonDisplay[button] === 'btn-primary' ? 'btn-default' : 'btn-primary'})
     }
 
     return (
