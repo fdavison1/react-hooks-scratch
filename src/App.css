@@ -11,3 +11,13 @@
   width: 700px;
   border: solid 1px lightgray;
 }
+
+.btn-primary {
+  background: blue;
+  color: white;
+}
+
+.btn-default {
+  background: white;
+  color: blue;
+}
